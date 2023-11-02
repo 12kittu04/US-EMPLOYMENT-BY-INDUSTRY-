@@ -1,0 +1,455 @@
+
+<html>
+
+<head>
+    <style>
+        body {
+            font: 60px ;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(1, 14, 14);
+            background-color: rgb(189, 200, 228);
+        }
+
+        path { 
+            stroke: rgb(22, 53, 79);
+            stroke-width: 2;
+            fill: none;
+        }
+            .axis path,
+            .axis line {
+            fill: none;
+            stroke: grey;
+            stroke-width: 2;
+            shape-rendering: crispEdges;
+  }
+
+
+
+    .graphc
+    {
+    height: 900px;
+    width: 55%;
+    float: left;
+    border-style: solid;
+    border-color: #030000;
+    
+    }
+
+
+    .graphb
+    {
+    height: 900px;
+    width: 55%;
+    float: left;
+    border-style: solid;
+    border-color: #030000;
+    
+    }
+
+    .fixed1 {
+            position: fixed;
+            top: 70px;
+            right: 50px;
+            background-color: #3e8dbe;
+            width: 750px;
+            border-radius: 5px;
+        }
+
+
+
+
+.column1 {
+    position: relative;
+    width: 150px;
+    height: 245px;
+    left: 10px;
+    top: -25px;
+}
+.column2 {
+    position: relative;
+    width: 150px;
+    height: 270px;
+    top: -270px;
+    margin-left: 150px;
+}
+
+.column3 {
+    position: relative;
+    width: 150px;
+    height: 270px;
+    top: -600px;
+    margin-left: 500px;
+}
+
+.column4 {
+    position: bottom left;
+    width: 55%;
+    height: 900px;
+    float: inline-start;
+    margin-left: 10px;
+    border: 2px solid #000; 
+    border-radius: 5px;
+}
+
+       
+
+        
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: rgb(1, 2, 20);
+            padding: 5px;
+        }
+ 
+
+    </style>
+        
+    </head>
+
+
+
+
+
+
+
+
+
+    <body>
+        <h1> US Unemployment Rates From 2013-2023</h1>
+
+        <div class="graphc" style="position: relative; margin-right: 475px;">
+            <h1 align="center">Unemployment By State</h1>
+            <div class="black-box"></div>
+
+        </div>
+
+        <div class="column4" >
+            <h1 align="center">Financial Activities</h1>
+            
+            </div>
+            
+<div id ="selection zone" class="fixed1">
+        <h2 style="margin-left: 50px;">Select States </h2>
+            <div style="margin: 30px; width: 650px; height: 900px;">
+
+                    <div class="column1">
+            
+                        <input type="checkbox" class="checkbox state-checkbox" id="AlabamaCheckbox"> Alabama<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="AlaskaCheckbox"> Alaska<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="ArizonaCheckbox"> Arizona<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="ArkansasCheckbox"> Arkansas<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="CaliforniaCheckbox"> California<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="ColoradoCheckbox"> Colorado<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="ConnecticutCheckbox"> Connecticut<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="DelawareCheckbox"> Delaware<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="FloridaCheckbox"> Florida<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="GeorgiaCheckbox"> Georgia<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="HawaiiCheckbox"> Hawaii<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="IdahoCheckbox"> Idaho<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="IllinoisCheckbox"> Illinois<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="IndianaCheckbox"> Indiana<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="IowaCheckbox"> Iowa<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="KansasCheckbox"> Kansas<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="KentuckyCheckbox"> Kentucky<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="LouisianaCheckbox"> Louisiana<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MaineCheckbox"> Maine<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MarylandCheckbox"> Maryland<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MassachusettsCheckbox"> Massachusetts<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MichiganCheckbox"> Michigan<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MinnesotaCheckbox"> Minnesota<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MississippiCheckbox"> Mississippi<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="MissouriCheckbox"> Missouri<br>
+                    </div>
+
+                    <div class="column2">
+
+                        <input type="checkbox" class="checkbox state-checkbox" id="MontanaCheckbox"> Montana<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NebraskaCheckbox"> Nebraska<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NevadaCheckbox"> Nevada<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NewHampshireCheckbox"> New Hampshire<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NewJerseyCheckbox"> New Jersey<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NewMexicoCheckbox"> New Mexico<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NewYorkCheckbox"> New York<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NorthCarolinaCheckbox"> North Carolina<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="NorthDakotaCheckbox"> North Dakota<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="OhioCheckbox"> Ohio<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="OklahomaCheckbox"> Oklahoma<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="OregonCheckbox"> Oregon<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="PennsylvaniaCheckbox"> Pennsylvania<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="RhodeIslandCheckbox"> Rhode Island<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="SouthCarolinaCheckbox"> South Carolina<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="SouthDakotaCheckbox"> South Dakota<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="TennesseeCheckbox"> Tennessee<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="TexasCheckbox"> Texas<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="UtahCheckbox"> Utah<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="VermontCheckbox"> Vermont<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="VirginiaCheckbox"> Virginia<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="WashingtonCheckbox"> Washington<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="WestVirginiaCheckbox"> West Virginia<br>
+                        <input type="checkbox" class="checkbox state-checkbox" id="WisconsinCheckbox">  Wisconsin<br>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                                            
+                                          
+                                    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+                                    <script>
+
+
+
+                                        
+
+                                    const margin = { top: 50, right: 20, bottom: 220, left: 50 },
+                                        width = 1000- margin.left - margin.right
+                                        height = 870 - margin.top - margin.bottom
+
+                                    const colors = d3.scaleOrdinal(d3.schemeCategory10);
+
+                                    const svg = d3.select(".graphc")
+                                        .append("svg")
+                                        .attr("width", width + margin.left + margin.right)
+                                        .attr("height", height + margin.top + margin.bottom )
+                                        .append("g")
+                                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                                    const y = d3.scaleLinear().range([height,0]);
+                                    const x = d3.scaleBand().range([0, width]);
+
+                                    d3.csv("Unemployment.csv").then(function(data) {
+                                       
+                                        const xData = data.slice(71, 94).map(function(d) {
+                                            return d[data.columns[0]];
+                                        });
+
+                                        y.domain([2, 15]);
+                                        x.domain(xData);
+                                        
+
+                                        svg.append("g")
+                                            .attr("class", "x-axis")
+                                            .attr("transform", `translate(0,${height})`)
+                                            .call(d3.axisBottom(x));
+
+                                        svg.selectAll(".x-axis text")
+                                            .style("text-anchor", "end")
+                                            .attr("dx", "-1em")
+                                            .attr("dy", "0.15em")
+                                            .attr("transform", "rotate(-90)")
+                                            .style("fill", "black");
+
+                                        svg.append("g")
+                                            .attr("class", "y-axis")
+                                            .call(d3.axisLeft(y));
+
+                                            const lines = [];
+
+
+                                            for (let j = 1; j < data.columns.length; j++) {
+                    const colName = data.columns[j];
+                    const line = d3.line()
+                        .x(function(d) { return x(d[data.columns[0]]); })
+                        .y(function(d) { return y(+d[data.columns[j]]); });
+
+                    svg.append("path")
+                        .datum(data.slice(71, 94))
+                        .attr("class", "line")
+                        .attr("d", line)
+                        .style("stroke", colors(j))
+                        .style("stroke-width", "2px")
+                        .style("fill", "none")
+                        .on("mouseover", (function (colName, j) {
+                            return function () {
+                                console.log("mouseover");
+                                d3.select(this).style("stroke-width", 4);
+                                const mouseY = d3.mouse(this)[1];
+                                const yValue = y.invert(mouseY);
+                                const label = `${colName}: ${yValue.toFixed(2)}`;                
+
+
+
+                                svg.append("text")
+                                    .attr("id", "pathLabel")
+                                    .attr("x", (width / 2) - 200) 
+                                    .attr("y", 0 - (margin.top / 4))
+                                    .attr("text-anchor", "middle")
+                                    .style("font-size", "20px")
+                                    .text(label);
+
+                                svg.selectAll(".line").style("opacity", function (d, i) {
+                                    return i === j ? 1 : 0.2;
+                                });
+                            };
+                        })(colName, j))
+                        .on("mouseout", function () {
+                            svg.select("#pathLabel").remove();
+                            console.log("mouseout");
+                            d3.select(this).style("stroke-width", 1);
+                            svg.selectAll(".line").style("opacity", 1);
+                        });
+                        
+
+                lines.push({ name: colName, line: line, index: j });
+                }
+
+                function updateGraph() {
+                    const checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked');
+                    const checkedNames = Array.from(checkedBoxes).map(box => box.id.replace('Checkbox', ''));
+                    svg.selectAll(".line").style("opacity", function(d, i) {
+                        const colName = data.columns[lines[i].index];
+                        return checkedNames.includes(colName) ? 1 : 0.2;
+                    });
+                }
+                updateGraph();
+
+    
+                    document.querySelectorAll('.checkbox').forEach(function(checkbox) {
+                        checkbox.addEventListener('change', updateGraph);
+                    });
+
+                    d3.csv("Millions.csv").then(function(data) {
+        const yearToValue = {};
+
+        data.forEach(function(d) {
+            const year = d.Year;
+            delete d.Year; 
+
+            yearToValue[year] = d;
+        });
+
+        document.querySelectorAll('.year-checkbox').forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    const selectedYear = this.id;
+                    const selectedValue = yearToValue[selectedYear];
+                    document.getElementById('selectedYearValue').textContent = selectedYear + ': ' + JSON.stringify(selectedValue);
+                } else {
+                    document.getElementById('selectedYearValue').textContent = 'Selected Year V';
+                }
+            });
+        });
+    });
+
+});
+
+const margin1 = { top: 50, right: 20, bottom: 220, left: 50 };
+    const width1 = 1000 - margin1.left - margin1.right;
+    const height1 = 870 - margin1.top - margin1.bottom;
+
+    const colors1 = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const svg1 = d3.select(".column4")
+        .append("svg")
+        .attr("width", width1 + margin1.left + margin1.right)
+        .attr("height", height1 + margin1.top + margin1.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin1.left + "," + margin1.top + ")");
+
+    const y1 = d3.scaleLinear().range([height1, 0]);
+    const x1 = d3.scaleBand().range([0, width1]);
+
+
+    d3.csv("FINANCIAL ACTIVITIES.csv").then(function (data1) {
+        const yData = Object.keys(data1[0]);
+
+        y1.domain([9, 950]);
+        x1.domain(yData.slice(1));
+
+        svg1.append("g")
+            .attr("class", "x-axis")
+            .attr("transform", `translate(0,${height1})`)
+            .call(d3.axisBottom(x1).tickValues(x1.domain().filter((d1, i) => i % 6 === 0)));
+
+        svg1.selectAll(".x-axis text")
+            .style("text-anchor", "end")
+            .attr("dx", "-1em")
+            .attr("dy", "0.15em")
+            .attr("transform", "rotate(-90)")
+            .style("fill", "black");
+
+        svg1.append("g")
+            .attr("class", "y-axis")
+            .call(d3.axisLeft(y1));
+
+        const lines = [];
+
+        for (let k = 1; k < data1.columns.length; k++) {
+            const colName1 = data1.columns[k];
+            const line1 = d3.line()
+                .x(function(d1) { return x1(d1[data1.columns[0]]); })
+                .y(function(d1) { return y1(+d1[data1.columns[k]]); });
+
+            svg1.append("path")
+                .datum(data1)
+                .attr("class", "line")
+                .attr("d1", line1)
+                .style("stroke", colors1(k))
+                .style("stroke-width", "2px")
+                .style("fill", "none");
+
+            lines.push({ name: colName1, line: line1, index: k });
+        }
+    }).catch(function (error) {
+        console.error("Error occurred while loading the data:", error);
+    });
+
+</script>
+</body>
+</html>
